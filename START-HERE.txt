@@ -1,0 +1,25 @@
+STUDY HUB - HOW TO OPEN THE APP
+================================
+
+Error -102 means the WEB app is not running.
+You need TWO black windows open at the same time.
+
+STEP 1: Double-click "start-app.bat" in this folder.
+
+STEP 2: Wait for TWO windows:
+  - "Study Hub - API"  (must say: API running at http://localhost:3001)
+  - "Study Hub - App"  (must say: Local: http://localhost:5173/)
+
+STEP 3: Only AFTER step 2, open in your browser:
+  http://localhost:5173/
+
+IMPORTANT:
+- Do NOT close either black window while using the app.
+- If you get Error -102, you closed "Study Hub - App" or it crashed.
+  Fix: double-click start-app.bat again.
+
+GEMINI API KEY (for study guides):
+- Open the file ".env" with Notepad (NOT the black windows).
+- Paste your key after GEMINI_API_KEY=
+- Get a key: https://aistudio.google.com/app/apikey
+- Save .env, then run start-app.bat again.
