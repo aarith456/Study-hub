@@ -11,7 +11,7 @@ export default function Layout() {
         <NavLink to="/" className="logo">
           <Logo size={38} />
           <span className="logo-text">
-            Study<span className="logo-accent">Hub</span>
+            Studyer<span className="logo-accent">Hub</span>
           </span>
         </NavLink>
         <nav className="nav">
