@@ -3,6 +3,7 @@ import { AuthProvider } from './context/AuthContext'
 import Layout from './components/Layout'
 import ProtectedRoute from './components/ProtectedRoute'
 import AdminRoute from './components/AdminRoute'
+import Landing from './pages/Landing'
 import Dashboard from './pages/Dashboard'
 import SignIn from './pages/SignIn'
 import AdminSignIn from './pages/AdminSignIn'
@@ -29,7 +30,8 @@ export default function App() {
           <Route index element={<AdminDashboard />} />
         </Route>
         <Route element={<Layout />}>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route
             path="/courses"
             element={
