@@ -15,6 +15,34 @@
   --error-text: #f87171;
 }
 
+[data-theme="light"] {
+  --bg: #f8f8f5;
+  --bg-elevated: #ffffff;
+  --surface: #f0efea;
+  --ink: #1a1a1a;
+  --ink-muted: #666666;
+  --accent: #e05a00;
+  --accent-dim: rgba(224, 90, 0, 0.1);
+  --accent-glow: rgba(224, 90, 0, 0.25);
+  --border: #e0e0d8;
+  --border-hover: #c8c8c0;
+  --error-bg: rgba(220, 38, 38, 0.08);
+  --error-text: #dc2626;
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--ink-muted);
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: border-color 0.2s, color 0.2s;
+  line-height: 1;
+}
+.theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
 * {
   box-sizing: border-box;
 }
