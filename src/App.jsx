@@ -11,8 +11,8 @@ import AdminSignIn from './pages/AdminSignIn'
 import AdminDashboard from './pages/AdminDashboard'
 import Courses from './pages/Courses'
 import CourseDetail from './pages/CourseDetail'
-import GuideView from './pages/GuideView'
 import Tutor from './pages/Tutor'
+import StudyMax from './pages/StudyMax'
 
 export default function App() {
   return (
@@ -26,11 +26,10 @@ export default function App() {
           </Route>
           <Route element={<Layout />}>
             <Route path="/" element={<Landing />} />
-            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/courses" element={<ProtectedRoute><Courses /></ProtectedRoute>} />
             <Route path="/courses/:courseId" element={<ProtectedRoute><CourseDetail /></ProtectedRoute>} />
-            <Route path="/courses/:courseId/guides/:guideId" element={<ProtectedRoute><GuideView /></ProtectedRoute>} />
             <Route path="/tutor" element={<ProtectedRoute><Tutor /></ProtectedRoute>} />
+            <Route path="/studymax" element={<ProtectedRoute><StudyMax /></ProtectedRoute>} />
           </Route>
         </Routes>
       </AuthProvider>

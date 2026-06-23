@@ -22,6 +22,7 @@ export default function Layout() {
             <>
               <NavLink to="/courses" className="nav-link">Courses</NavLink>
               <NavLink to="/tutor" className="nav-link">Tutor</NavLink>
+              <NavLink to="/studymax" className="nav-link">Study Max</NavLink>
             </>
           )}
           {isAdmin && (
